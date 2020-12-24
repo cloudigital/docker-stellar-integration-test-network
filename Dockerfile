@@ -67,7 +67,7 @@ RUN echo "[start: configuring paths and users]" \
     && echo "[end: configuring paths and users]"
 
 # Install friendbot
-ENV FRIENDBOT_VERSION 0.0.2
+ENV FRIENDBOT_VERSION 0.0.1
 RUN echo "[start: friendbot install]" \
     && wget -O friendbot.tar.gz https://github.com/stellar/go/releases/download/friendbot-v${FRIENDBOT_VERSION}/friendbot-v${FRIENDBOT_VERSION}-linux-amd64.tar.gz \
     && tar xf friendbot.tar.gz --to-stdout friendbot-v${FRIENDBOT_VERSION}-linux-amd64/friendbot > /opt/stellar-default/common/friendbot/friendbot \
